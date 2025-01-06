@@ -1,0 +1,9 @@
+{
+	"premier98i": [
+		"ffmpeg -i \"<<INPUT>>\" -sn -c:a wmav2 -c:v libxvid -crf 24 -vtag DIVX -vf scale=640:480 -aspect 4:3 -g 30 -vb 800k \"<<OUTPUT>>\""
+	],
+
+	"premier98i-conf": [
+		"ffmpeg -i \"<<INPUT>>\" -sn -c:a wmav2 -ar 44100 -ab 128k -ac 2 -c:v libxvid -crf 24 -vtag DIVX -vf scale=640:480 -aspect 4:3 -g 30 -vb 800k -r 30 \"<<OUTPUT>>\""
+	]
+}

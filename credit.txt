@@ -1,0 +1,4 @@
+
+evilsoup @ https://superuser.com/questions/309822/ffmpeg-command-to-convert-to-divx
+>>> ffmpeg -y -i input.file -c:v mpeg4 -b:v 868k -tag:v DIVX -s 640x480 -an -pass 1 -f rawvideo /dev/null
+>>> ffmpeg -i input.file -c:v mpeg4 -b:v 868k -tag:v DIVX -s 640x480 -c:a libmp3lame -b:a 192k -ac 2 -ar 44100 -pass 2 output.avi
